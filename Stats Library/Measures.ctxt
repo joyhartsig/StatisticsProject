@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Measures
+comment1.params=
+comment1.target=double\ getMean()
+comment2.params=
+comment2.target=double\ getMedian()
+comment3.params=
+comment3.target=java.lang.Double\ getMode()
+comment4.params=
+comment4.target=double\ getSVariance()
+comment5.params=
+comment5.target=double\ getPVariance()
+comment6.params=
+comment6.target=double\ getSStDev()
+comment7.params=
+comment7.target=double\ getPStDev()
+numComments=8

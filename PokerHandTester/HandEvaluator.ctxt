@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=HandEvaluator
+comment1.params=
+comment1.target=java.util.ArrayList\ getHand()
+comment2.params=
+comment2.target=int\ testPair()
+numComments=3

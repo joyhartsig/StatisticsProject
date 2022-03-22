@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Binomial
+comment1.params=
+comment1.target=void\ getValues()
+comment2.params=
+comment2.target=double\ getMean()
+comment3.params=
+comment3.target=double\ getVariance()
+comment4.params=
+comment4.target=double\ EqualTo()
+comment5.params=
+comment5.target=double\ LessThan()
+comment6.params=
+comment6.target=double\ LessThanEqual()
+comment7.params=
+comment7.target=double\ GreaterThan()
+comment8.params=
+comment8.target=double\ GreaterThanEqual()
+comment9.params=n\ y
+comment9.target=long\ getCombo(double,\ double)
+numComments=10
