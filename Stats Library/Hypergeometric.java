@@ -59,7 +59,6 @@ public class Hypergeometric
             double c = getCombo(N,n);
         
             double sum = (a*b)/c; 
-            System.out.println("        y ="+ y);
             probability += sum;
        }
                
@@ -75,7 +74,6 @@ public class Hypergeometric
             double c = getCombo(N,n);
         
             double sum = (a*b)/c; 
-            System.out.println("        y ="+ y);
             probability += sum;
        }
                

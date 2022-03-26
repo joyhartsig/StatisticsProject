@@ -1,29 +1,18 @@
 import java.util.ArrayList;
-import java.util.Random;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
 
+//The Plotter class creates a csv file that outputs the x and y values
 class Plotter
 {
     public void plotter()throws IOException{
-        //using the equation of a line: y = mx + b in the form ax+by=c
+        //initializes the x variable
+        int x = 0;
         
-        //declare the variables
-        //the user-inputted a, b, and c values
-        //the resulting x and y intercepts
-            //ax+by=c
-            double a = 2;
-            double b = 5;
-            double c = 7;
-            
-            //the variables for x and y
-            double x = 0;
-            double y = 0;
-            
-        //initalize ArrayList 
-        ArrayList<Double> list1 = new ArrayList<>();
+        //initalize the equation class
+        LinearEquation e = new LinearEquation();
         
         //Create output .csv file
         File file = new File("plotter.csv");
@@ -31,9 +20,11 @@ class Plotter
         BufferedWriter bw = new BufferedWriter(fw);
         
         //entry to show the equation
-        bw.write("ax + by = c");
+        bw.write("Plotter:");
         bw.newLine();
-        bw.write(a+"x + "+b+"y = "+c);
+        bw.write("y = mx + b");
+        bw.newLine();
+        bw.write("y = "+e.getM()+"x + "+e.getB());
         bw.newLine();
         bw.newLine();
 
@@ -41,19 +32,11 @@ class Plotter
         bw.write("X,Y");
         bw.newLine();
     
-        //calculates the y values when x is -10 to 10
-        for(x = -10; x < 11; x++){
-            //formula to find the y value when knowing x
-            y = (c-(a*x))/b;
-            //adds the values to the csv file
-            bw.write(x+","+y);
-            bw.newLine();
-        }
-        
-        //calculates the x values when y is -10 to 10
-        for(y = -10; y < 11; y++){
-            //formula to find the x value when knowing y
-            x = (c-(b*y))/a;
+        //calculates the y values when x is 0 to 20
+        for(x = 0; x <= 20; x++){
+            //sets y equal to the out put of the equation
+            double y = e.linearEquation(x);
+            
             //adds the values to the csv file
             bw.write(x+","+y);
             bw.newLine();

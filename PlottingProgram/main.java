@@ -7,7 +7,10 @@ public class main
         Plotter p = new Plotter();
         p.plotter();
         
-        // Salter s = new Salter();
-        // s.salter();
+        Salter s = new Salter();
+        s.salter();
+        
+        Smoother m = new Smoother();
+        m.smoother();
     }
     }
