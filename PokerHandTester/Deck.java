@@ -11,7 +11,7 @@ public class Deck
         deck = new ArrayList<Card>();
         
         //loops through and creates all 52 cards in the deck
-        //A = 1     J = 10      Q = 11      K = 12
+        //A = 1     J = 11      Q = 12      K = 13
         for(int i = 1; i < 14; i++){
             deck.add(new Card("Diamonds", i));
             deck.add(new Card("Hearts", i));

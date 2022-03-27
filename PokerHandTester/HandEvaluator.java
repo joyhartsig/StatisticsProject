@@ -13,7 +13,6 @@ public class HandEvaluator
         
         //gets the shuffled deck
         d.getDeck();
-        
         //System.out.println("deck: "+d.getDeck());
         //System.out.println("number of cards in deck: "+d.getDeck().size());        
         
@@ -111,15 +110,6 @@ public class HandEvaluator
         
         //System.out.println("Straight?");
         //System.out.println(hand);
-        
-        //loops through the 5 card hand to determine if the number on the cards are in order
-        // for(int i=0; i < 5; i++){
-            // for(int j = i + 1; j < 5; j++){
-                // if(hand.get(i).getNumber() + 1 == hand.get(j).getNumber()){
-                    // count++;
-                // }
-            // }
-        // }
         
         for(int i=0; i < 1; i++){
             if((hand.get(i + 1)).getNumber()==(hand.get(i)).getNumber() + 1 && (hand.get(i + 2)).getNumber()==(hand.get(i)).getNumber() + 2 && (hand.get(i + 3)).getNumber()==(hand.get(i)).getNumber() + 3 && (hand.get(i + 4).getNumber()==hand.get(i).getNumber() + 4)){

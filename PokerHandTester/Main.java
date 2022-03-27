@@ -54,7 +54,6 @@ public class Main
             
         }
         
-        
         System.out.println("Poker Hand Tester");
         System.out.println("-------------------------");
         System.out.println("The probability of getting a pair in "+trials+" hands is: "+h.getProbability(pairCount)+"%");
@@ -72,7 +71,7 @@ public class Main
         System.out.println("The probability of getting four of a kind in "+trials+" hands is: "+h.getProbability(fourCount)+"%");
         System.out.println();
         System.out.println("Poker Hand Probabilities for Reference");
-        System.out.println("-------------------------");
+        System.out.println("----------------------------------------------");
         System.out.println("The probability of getting a pair should be: 42.26% ");
         System.out.println();
         System.out.println("The probability of getting three of a kind should be: 2.11%");
